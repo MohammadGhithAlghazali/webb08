@@ -1,0 +1,128 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "a a a"
+            "b b c"
+            "b b c"
+            "d d d";
+  grid-gap: 10px 20px;
+}
+
+@media screen and (min-width: 750px) {
+
+
+
+      body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "a a a"
+                  "b b c"
+                  "b b c"
+                  "d d d";
+        grid-gap: 10px 10px;
+      }
+
+      p {
+        color: black;
+      }
+
+      body {
+        background-color: pink;
+      }
+
+      header {
+        background-color: pink;
+        grid-area: a;
+        height: 200px;
+      }
+
+      section {
+        background-color: pink;
+        grid-area: b;
+      }
+
+      aside {
+        background-color: lightblue;
+        grid-area: c;
+        width: 250px;
+        max-width: 250px;
+        height: 350px;
+      }
+
+      footer {
+        background-color: pink;
+        grid-area: d;
+        width: 30px;
+      }
+
+      img#sea {
+        max-width: 100%;
+        height: auto;
+      }
+
+      img#html {
+        max-width: 100%;
+        height: auto;
+
+      }
+     }
+     @media screen and (max-width: 750px) {
+
+
+
+           body {
+             grid-template-columns: 1fr 1fr;
+             grid-template-areas:
+             "a a "
+                       "b b"
+                       "c c"
+                       "d d";
+             grid-gap: 10px 10px;
+           }
+
+           p {
+             color: black;
+           }
+
+           body {
+             background-color: green;
+           }
+
+           header {
+             background-color: green;
+             grid-area: a;
+             height: 200px;
+           }
+
+           section {
+             background-color: green;
+             grid-area: b;
+           }
+
+           aside {
+             background-color: lightblue;
+             grid-area: c;
+             width: 250px;
+             max-width: 250px;
+             height: 350px;
+           }
+
+           footer {
+             background-color: green;
+             grid-area: d;
+             width: 30px;
+           }
+
+           img#sea {
+             max-width: 100%;
+             height: auto;
+           }
+
+           img#html {
+             max-width: 100%;
+             height: auto;
+
+           }
+          }
